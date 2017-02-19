@@ -1,0 +1,3 @@
+[submodule "3rdParty/teetime"]
+	path = 3rdParty/teetime
+	url = https://github.com/eXistence/TeeTime-Cpp.git
