@@ -1,4 +1,4 @@
-# Copyright (C) 2016 Johannes Ohlemacher (https://github.com/eXistence/TeeTime-Cpp-Examples)
+# Copyright (C) 2016 Johannes Ohlemacher (https://github.com/teetime-framework/TeeTime-Cpp-Examples)
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ ELSEIF (${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU")
 ELSEIF (${CMAKE_CXX_COMPILER_ID} STREQUAL "MSVC")
   SET(CMAKE_CXX_FLAGS                "/W4 /EHsc /D_CRT_SECURE_NO_WARNINGS")
   SET(CMAKE_CXX_FLAGS_DEBUG          "/MTd /Od /D_SECURE_SCL=1 /Zi")
-  SET(CMAKE_CXX_FLAGS_RELEASE        "/MT /O2 /DNDEBUG /D_SECURE_SCL=0")  
+  SET(CMAKE_CXX_FLAGS_RELEASE        "/MT /O2 /DNDEBUG /D_SECURE_SCL=0")
   SET(CMAKE_CXX_FLAGS_RELWITHDEBINFO "/MT /O2 /DNDEBUG /D_SECURE_SCL=0 /Zi")
   SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
 ENDIF()

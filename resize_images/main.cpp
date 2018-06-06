@@ -1,5 +1,5 @@
 /**
-* Copyright (C) 2016 Johannes Ohlemacher (https://github.com/eXistence/TeeTime-Cpp-Examples)
+* Copyright (C) 2016 Johannes Ohlemacher (https://github.com/teetime-framework/TeeTime-Cpp-Examples)
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -124,7 +124,7 @@ int main(int argc, char** argv)
     }
   }
 
-  if (settings.inputDirectory.empty()) 
+  if (settings.inputDirectory.empty())
   {
     TEETIME_ERROR() << "no input directory";
     return EXIT_FAILURE;
@@ -136,13 +136,13 @@ int main(int argc, char** argv)
     return EXIT_FAILURE;
   }
 
-  if (settings.outputDirectory.empty()) 
+  if (settings.outputDirectory.empty())
   {
     TEETIME_ERROR() << "no output directory";
     return EXIT_FAILURE;
   }
 
-  if (!teetime::platform::isDirectory(settings.outputDirectory) && 
+  if (!teetime::platform::isDirectory(settings.outputDirectory) &&
     !teetime::platform::createDirectory(settings.outputDirectory))
   {
     TEETIME_ERROR() << "failed to create output directory: " << settings.inputDirectory;
